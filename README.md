@@ -1,22 +1,67 @@
 # Credit Card Financial Data Dashboard
+
 ## Overview
-This project focuses on the analysis of credit card customer and transaction data. The primary aim is to visualize key insights about customer spending patterns, transaction volumes, and overall financial trends using a dashboard created in PowerBI. The dataset was preprocessed using SQL, and the visualizations were designed to provide a holistic view of financial behaviors and transaction activities.
+
+This project analyzes credit card customer and transaction data to visualize key insights about customer spending patterns, transaction volumes, and overall financial trends. The data was preprocessed using SQL, and the visualizations were created in PowerBI, offering a dynamic, interactive dashboard to explore credit card usage behaviors.
 
 ## Project Structure
-SQL Preprocessing : SQL was used to clean, transform, and filter the raw data. Key operations included:
-1) Handling missing values in customer and transaction datasets.
-2) Aggregating transaction data to identify patterns in customer spending.
-3) Joining multiple tables to create a unified dataset for analysis.
 
-**PowerBI Visualizations:** After data preprocessing, PowerBI was used to create dynamic and interactive visualizations. These visualizations provide insights into:
-**Transaction Volume:** Total and average transaction amounts, segmented by time and customer.
-**Customer Segmentation:** Distribution of customers based on transaction frequency and total spending.
-**Monthly Trends:** Monthly and yearly trends in credit card usage, highlighting periods of high and low spending.
-**Customer Loyalty:** Insights into repeat customers versus new customers, providing an understanding of customer retention and loyalty.
+- **SQL Preprocessing:** The raw data was cleaned and transformed using SQL before analysis in PowerBI. Key SQL operations included:
+  - Handling missing values.
+  - Aggregating transaction data to uncover patterns.
+  - Joining customer and transaction data into a unified dataset for analysis.
+
+- **PowerBI Visualizations:** The cleaned data was imported into PowerBI to create a dashboard that highlights:
+  - **Transaction Volume:** Total and average transaction amounts segmented by time and customer.
+  - **Customer Segmentation:** Distribution of customers by transaction frequency and spending habits.
+  - **Monthly Trends:** Identifying seasonal patterns in credit card spending.
+  - **Customer Loyalty:** Analysis of customer retention and loyalty.
 
 ## Key Insights
-**Customer Spending Patterns**: A significant portion of customers are high spenders, with a clear trend of increased transactions during specific months, likely driven by promotions or seasonal factors.
-**Transaction Distribution**: Most transactions are concentrated within a particular spending range, with a notable portion of high-value transactions coming from a small percentage of customers.
-**Monthly Trends:** The data reveals a peak in transactions during certain months, indicating possible seasonal spikes in credit card usage.
-**Customer Retention**: Analysis of customer loyalty shows that repeat customers contribute significantly to the overall transaction volume.
 
+1. **Customer Spending Patterns:** A clear segment of high spenders is visible, with transaction peaks in certain months, likely due to promotions or seasonal events.
+2. **Transaction Distribution:** Most transactions fall within a specific range, with high-value transactions concentrated among a small group of customers.
+3. **Monthly Trends:** Peaks in transactions occur during certain months, highlighting seasonal spending trends.
+4. **Customer Retention:** Repeat customers account for a significant portion of overall transactions, indicating strong customer loyalty.
+
+## Data Preprocessing
+
+The project used two primary datasets:
+- **Customer Data:** Contains demographic details of credit card holders.
+- **Transaction Data:** Logs individual transactions, including transaction amount, date, and category.
+
+### SQL Processing Steps:
+1. **Data Cleaning:** Handled missing values, removed duplicates, and standardized columns.
+2. **Data Aggregation:** Aggregated transaction data by customer, calculating total spend, frequency, and average transaction amount.
+3. **Data Joins:** Merged customer and transaction data into a single dataset for visualization in PowerBI.
+
+## Visualizations in PowerBI
+
+The PowerBI dashboard includes:
+- **Customer Overview:** Demographic analysis of credit card holders.
+- **Transaction Trends:** Time-series analysis of transaction volume and spending, segmented by customer type and category.
+- **Top Spenders:** Insights into the top 10% of high-value customers.
+- **Spending by Category:** Breakdown of spending across key categories (e.g., travel, retail, dining).
+
+## How to Use
+
+1. **Run the provided SQL scripts** to preprocess the data.
+2. **Import the cleaned data into PowerBI.**
+3. **Explore the interactive dashboard** for insights into credit card spending patterns and trends.
+
+## Technologies Used
+
+- **SQL**: For data preprocessing.
+- **PowerBI**: For creating the dashboard.
+- **Python (optional)**: For extended analysis and potential machine learning integrations.
+
+## Project Files
+
+- `SQL_Scripts/`: Contains SQL scripts for data preprocessing.
+- `PowerBI_Dashboard.pbix`: The PowerBI dashboard file.
+
+---
+
+### Author
+
+This project was created as part of a data analysis initiative to explore customer behavior in the financial services sector.
