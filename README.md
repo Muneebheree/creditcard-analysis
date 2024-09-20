@@ -57,8 +57,8 @@ The PowerBI dashboard includes:
 
 ## Project Files
 
-- `SQL_Scripts/`: Contains SQL scripts for data preprocessing.
-- `PowerBI_Dashboard.pbix`: The PowerBI dashboard file.
+- `tables`: Contains SQL scripts for data preprocessing.
+- `Dashboard.pbix`: The PowerBI dashboard file.
 
 ---
 
